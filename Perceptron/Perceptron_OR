@@ -1,0 +1,38 @@
+# Perceptrón - Operación OR
+
+import numpy as np
+
+# Entradas y salidas esperadas
+entradas = np.array([[0,0], [0,1], [1,0], [1,1]])
+salidas_esperadas = np.array([0, 1, 1, 1])
+
+# Inicializamos pesos y bias con valores aleatorios
+pesos = np.random.rand(2)
+bias = np.random.rand(1)
+tasa_aprendizaje = 0.1
+
+# Función de activación (step)
+def activacion(x):
+    return 1 if x >= 0 else 0
+
+# Entrenamiento del perceptrón
+for epoca in range(10):
+    for i in range(len(entradas)):
+        x = entradas[i]
+        salida_deseada = salidas_esperadas[i]
+        salida_obtenida = activacion(np.dot(x, pesos) + bias)
+        
+        # Regla de actualización
+        error = salida_deseada - salida_obtenida
+        pesos = pesos + tasa_aprendizaje * error * x
+        bias = bias + tasa_aprendizaje * error
+
+print("Pesos finales:", pesos)
+print("Bias final:", bias)
+
+# Prueba del perceptrón entrenado
+print("\nResultados finales:")
+for i in range(len(entradas)):
+    x = entradas[i]
+    salida = activacion(np.dot(x, pesos) + bias)
+    print(f"Entrada: {x}, Salida: {salida}")
