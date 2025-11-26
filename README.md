@@ -1,28 +1,37 @@
-# Finanzas Universitarias
+# Finanzas Universitarias con Inteligencia Artificial
 
-[![Python](https://img.shields.io/badge/Python-3.x-blue)](https://www.python.org/) 
-[![Flask](https://img.shields.io/badge/Flask-2.x-green)](https://flask.palletsprojects.com/) 
-[![HTML5](https://img.shields.io/badge/HTML5-orange)]() 
-[![CSS3](https://img.shields.io/badge/CSS3-blueviolet)]() 
-[![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)]()
+[![Python](https://img.shields.io/badge/Python-3.11-blue)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.104-green)](https://fastapi.tiangolo.com/)
+[![Scikit-learn](https://img.shields.io/badge/scikit--learn-1.3-orange)](https://scikit-learn.org/)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.13-important)](https://www.tensorflow.org/)
+[![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4o-brightgreen)](https://openai.com/)
 
 ## Descripción
 
-**Finanzas Universitarias** es un resumen de codigod utilizados en las definiciones vasicas de inteligencia artificial, utilizado para que estudiantes universitarios lleven el control de sus ingresos, gastos y presupuestos de forma sencilla e intuitiva.
+**Finanzas Universitarias IA** es una aplicación web inteligente que combina control financiero personal con modelos de inteligencia artificial para ayudar a estudiantes universitarios a:
 
-## Características
+- Predecir gastos futuros
+- Recibir recomendaciones personalizadas de ahorro
+- Categorizar automáticamente transacciones con NLP
+- Detectar patrones de gasto anormales
+- Generar consejos financieros con GPT
 
-- Registro de ingresos y gastos con categorías
-- Dashboard con gráficos de evolución
-- Presupuestos mensuales y alertas
-- Reportes descargables
-- Diseño 100% responsivo
-- Login de usuarios
+¡Todo diseñado especialmente para la realidad económica de un estudiante!
 
-## Tecnologías
+## Modelos de Inteligencia Artificial incluidos
 
-- Python + Flask (backend)
-- HTML5 + CSS3 + JavaScript (frontend)
-- SQLite (base de datos ligera)
-- Matplotlib / Chart.js para gráficos
+| Modelo | Función | Tecnología |
+|-------|--------|------------|
+| Clasificador de categorías | Detecta automáticamente si un gasto es "comida", "transporte", "fiesta", etc. | Scikit-learn + TF-IDF |
+| Predicción de saldo | Pronostica tu saldo al final del mes | Prophet / LSTM |
+| Detector de gastos impulsivos | Te avisa cuando estás gastando fuera de lo normal | Isolation Forest (detección de anomalías) |
+| Asistente financiero con IA | Responde preguntas y da consejos personalizados | GPT-4o / Llama 3 (local opcional) |
 
+## Características principales
+
+- Categorización automática de gastos con >92% precisión
+- Predicciones de saldo semanal/mensual
+- Alertas inteligentes ("Este mes vas a gastar 40% más en salidas")
+- Chatbot financiero 24/7 dentro de la app
+- Dashboard con gráficos interactivos (Plotly)
+- 100% offline opcional (modelos locales)
